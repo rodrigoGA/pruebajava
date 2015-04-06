@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+<h:form>
+
+<tr>
+	<TD> nombre: </TD>
+	<TD> <h:inputText label="nombre del usuario" value="#{userController.newUser.nombre}" /> </TD>
+</tr>
+<tr>
+	<h:commandButton value="crear" action="#{userController.addUser}" />
+</tr>
+ </h:form>
+
+</body>
+</html>
